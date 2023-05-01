@@ -1,0 +1,30 @@
+<h1>Check Console</h1>
+
+<table border="5px">
+  <h1>Without Filter Data</h1>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>City</th>
+  </tr>
+  <tr *ngFor="let item of dataArray">
+    <td>{{ item.id }}</td>
+    <td>{{ item.name }}</td>
+    <td>{{ item.city }}</td>
+  </tr>
+</table>
+<hr><hr>
+
+<table border="5px">
+  <h1>After Filter Data</h1>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>City</th>
+  </tr>
+  <tr *ngFor="let item of filterData">
+    <td>{{ item.id }}</td>
+    <td>{{ item.name }}</td>
+    <td>{{ item.city }}</td>
+  </tr>
+</table>

@@ -1,0 +1,47 @@
+Task - 02 
+
+Operators:
+
+    The Operators is used for the manage the data with observable.All Operators import from the rxjs.
+
+    [01] of() :
+        This Operator is used for the creation the observable...
+        This is used for the emmit the one by one data into observable and also it can emmit different type of data.It will not iterate the array.
+    
+    [02] from() :
+        This Operator is also used for the creation the observable...it only accept the array object and iterate the array one by one.
+        This is operator and this is used for the emmit the data one by one to the observable. This is taken like an array object.
+
+    [03] mergeMap() :
+        This is used for the which data first come from the server and it will return which data comed first.It will not return sequence line by line data.so it will merging the data when data coming.and it will work like nested loop. observable under the observable data return which is ready data.
+    
+    [04] concatMap() :
+        This is used for the concat the data one by one and it will return sequence line by line.it will wait for the first data complete get then go to next data.if first not completely get then it will waiting data get then go to next data.
+        This is first called the outer observable then inside observable get proper then again work with this sequence.
+
+    [05] switchMap() :
+        This is used for the get the last the data and imidiately switch next data and last data return.it means every time past data override with the latest data and latest data will be return.
+    
+    [06] exhaustMap() :
+        This is used for the get first data. it means api submit button click multiple time but it will return only first submit button data.
+
+    [07] flatMap() :
+        This is a similar as a mergeMap() operator. and it is an alias for mergeMap(). 
+        This is used for the array value separate and it will by default 1 sub array depth. and it means it will make a separate string by space and return one new array.
+
+    [08] Filter() :
+        This is used for the get data with filter. so we can set and get condition base filtered data into array.
+
+    [09] Map() :
+        This is used for get data from the server and some modifition on that data and return observable with new data.
+        so we can maange the data according to our requirements...
+
+    [10] Reduce() :
+        This is used for the get data from the server and using reduce()  we can some calculation on that data and we need to pass to variable in reduce((acc,val)=>). so we can calculation using these two variable.
+        This is used for the mathematical operion between input data and observable data.and we can set also default value.
+            reduce((acc,val)=>{ return acc+val},0);
+        you can zero is defult value
+
+
+
+
